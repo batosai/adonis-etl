@@ -1,0 +1,13 @@
+{{#var resourceFileName = string(className).snakeCase().ext('.ts').toString()}}
+{{{
+  exports({
+    to: app.makePath('app/etl/transforms', resourceFileName)
+  })
+}}}
+import { Transform } from '@jrmc/adonis-etl'
+
+export default class {{ className }} implements Transform {
+  async process(row: unknown) {
+    return row
+  }
+}
