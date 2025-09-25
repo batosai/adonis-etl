@@ -1,7 +1,7 @@
 {{#var resourceFileName = string(className).snakeCase().ext('.ts').toString()}}
 {{{
   exports({
-    to: app.makePath('app/etl/sources', resourceFileName)
+    to: app.makePath(app.rcFile.directories['etl'] || 'app/etl/', 'sources', resourceFileName)
   })
 }}}
 import { Source } from '@jrmc/adonis-etl'
