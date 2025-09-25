@@ -9,7 +9,7 @@
   ],
   "author": "Jeremy Chaufourier jeremy@chaufourier.fr",
   "license": "MIT",
-  "description": "AdonisJS ETL commands package",
+  "description": "AdonisJS ETL skaffold commands package",
   "type": "module",
   "main": "build/index.js",
   "repository": {
