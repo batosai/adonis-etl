@@ -146,16 +146,17 @@ app/
         └── your_destination_files.ts
 ```
 
-**Custom structure (with `directories.etl: 'Opsone/jerem'`):**
+**Custom structure (with `directories.etl: 'src/module/etl'`):**
 ```
-Opsone/
-└── jerem/
-    ├── sources/
-    │   └── your_source_files.ts
-    ├── transforms/
-    │   └── your_transform_files.ts
-    └── destinations/
-        └── your_destination_files.ts
+src/
+└── module/
+    └── etl/
+        ├── sources/
+        │   └── your_source_files.ts
+        ├── transforms/
+        │   └── your_transform_files.ts
+        └── destinations/
+            └── your_destination_files.ts
 ```
 
 ## Naming Convention
