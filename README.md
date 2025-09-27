@@ -78,11 +78,11 @@ This will create (with default configuration):
 - `app/etl/transforms/import_product_csv_to_db_transform.ts`
 - `app/etl/destinations/import_product_db_destination.ts`
 
-Or with custom directory configuration (`directories.etl: 'Opsone/jerem'`):
+Or with custom directory configuration (`directories.etl: 'etl'`):
 
-- `Opsone/jerem/sources/import_product_csv_source.ts`
-- `Opsone/jerem/transforms/import_product_csv_to_db_transform.ts`
-- `Opsone/jerem/destinations/import_product_db_destination.ts`
+- `etl/sources/import_product_csv_source.ts`
+- `etl/transforms/import_product_csv_to_db_transform.ts`
+- `etl/destinations/import_product_db_destination.ts`
 
 ## Generated Files
 
