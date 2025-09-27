@@ -258,11 +258,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog
 
-### 1.0.0-alpha.1
+### 1.0.0
 - Initial release
 - Interactive ETL component generation
 - Support for Source, Transform, and Destination components
 - TypeScript support
-
-### 1.0.0-alpha.3
 - Custom directory configuration support via `directories.etl` in adonisrc.ts
