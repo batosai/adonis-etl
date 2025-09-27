@@ -4,7 +4,7 @@
     to: app.makePath(app.rcFile.directories['etl'] || 'app/etl/', 'destinations', resourceFileName)
   })
 }}}
-import { Destination } from '@jrmc/adonis-etl'
+import type { Destination } from '@jrmc/adonis-etl'
 
 export default class {{ className }} implements Destination {
   async write(row: unknown) {
