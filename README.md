@@ -258,6 +258,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Changelog
 
+### 1.0.2
+- Fix: Corrected naming convention for classes
+
 ### 1.0.0
 - Initial release
 - Interactive ETL component generation
