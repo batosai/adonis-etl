@@ -7,7 +7,7 @@ type Product = {
   Taille: string
   Stock: number
   Description: string
-  'Catégorie': string
+  Catégorie: string
 }
 
 export default class ProductCsvToDbTransform implements Transform {

@@ -5,9 +5,11 @@ import csv from 'csv-parser'
 export default class ProductCsvSource implements Source {
   async *each() {
     // Optimized version for large files (500k+ rows)
-    const stream = fs.createReadStream('etl/resources/products.csv', {
-      highWaterMark: 128 * 1024 // 128KB buffer optimized for millions of rows
-    }).pipe(csv())
+    const stream = fs
+      .createReadStream('etl/resources/products.csv', {
+        highWaterMark: 128 * 1024, // 128KB buffer optimized for millions of rows
+      })
+      .pipe(csv())
 
     for await (const data of stream) {
       yield data

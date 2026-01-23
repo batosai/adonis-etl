@@ -18,7 +18,7 @@ export default class ImportBooks extends BaseCommand {
 
     await etl.run({
       source: bookCsvSource,
-      destination: bookDbDestination
+      destination: bookDbDestination,
     })
   }
 }

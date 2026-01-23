@@ -13,7 +13,6 @@ export default class ImportProducts extends BaseCommand {
   async run() {
     this.logger.info('Hello world from "ImportProduct"')
 
-
     const productCsvSource = () => import('../etl/sources/product_csv_source.js')
     const productCsvToDbTransform = () => import('../etl/transforms/product_csv_to_db_transform.js')
     const productDbDestination = () => import('../etl/destinations/product_db_destination.js')
@@ -21,7 +20,7 @@ export default class ImportProducts extends BaseCommand {
     await etl.run({
       source: productCsvSource,
       transform: productCsvToDbTransform,
-      destination: productDbDestination
+      destination: productDbDestination,
     })
   }
 }

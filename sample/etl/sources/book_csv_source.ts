@@ -4,9 +4,11 @@ import csv from 'csv-parser'
 
 export default class BookCsvSource implements Source {
   async *each() {
-    const stream = fs.createReadStream('etl/resources/books.csv', {
-      highWaterMark: 128 * 1024 // 128KB for very large files
-    }).pipe(csv())
+    const stream = fs
+      .createReadStream('etl/resources/books.csv', {
+        highWaterMark: 128 * 1024, // 128KB for very large files
+      })
+      .pipe(csv())
 
     let batch = []
     const BATCH_SIZE = 500 // Reduced batch size to work better with SQLite limits
