@@ -6,14 +6,12 @@ type BookData = {
   name: string
 }
 
-export default class book_db_destination implements Destination {
+export default class BookDbDestination implements Destination {
   async write(rows: BookData[]) {
     // await Book.createMany(rows)
     console.log(rows)
 
-    await db
-    .table('books')
-    .multiInsert(rows)
+    await db.table('books').multiInsert(rows)
 
     return rows
   }

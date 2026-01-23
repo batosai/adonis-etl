@@ -2,7 +2,7 @@ import { Source } from '@jrmc/adonis-etl'
 import fs from 'node:fs'
 import csv from 'csv-parser'
 
-export default class book_csv_source implements Source {
+export default class BookCsvSource implements Source {
   async *each() {
     const stream = fs.createReadStream('etl/resources/books.csv', {
       highWaterMark: 128 * 1024 // 128KB for very large files

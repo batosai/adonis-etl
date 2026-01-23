@@ -11,7 +11,7 @@ type ProductData = {
   category: string
 }
 
-export default class product_db_destination implements Destination {
+export default class ProductDbDestination implements Destination {
   async write(row: ProductData) {
     await Product.create(row)
     console.log(row)

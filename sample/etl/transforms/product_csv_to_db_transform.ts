@@ -10,7 +10,7 @@ type Product = {
   'Catégorie': string
 }
 
-export default class product_csv_to_db_transform implements Transform {
+export default class ProductCsvToDbTransform implements Transform {
   async process(row: Product) {
     return {
       name: row.Nom,
