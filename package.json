@@ -34,17 +34,17 @@
     "./commands/*": "./build/commands/*.js"
   },
   "dependencies": {
-    "@jrmc/etl": "^1.0.1"
+    "@jrmc/etl": "^1.0.2"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^7.8.2",
     "@adonisjs/core": "^6.21.0",
     "@adonisjs/lucid": "^21.8.2",
-    "@adonisjs/prettier-config": "^1.4.5",
+    "@adonisjs/prettier-config": "^1.5.0",
     "@adonisjs/tsconfig": "^1.4.1",
-    "@types/node": "^24.12.0",
+    "@types/node": "^24.13.2",
     "del-cli": "^7.0.0",
-    "prettier": "^3.8.1",
+    "prettier": "^3.9.4",
     "typescript": "^5.9.3"
   },
   "prettier": "@adonisjs/prettier-config",
