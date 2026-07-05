@@ -187,6 +187,18 @@ These examples demonstrate different possible approaches:
 - **Direct database insertion** vs **Lucid model usage**
 - **With or without data transformation**
 
+## Agent Skill
+
+This package ships an [agent skill](skills/adonis-etl/SKILL.md) for AI coding assistants (Claude Code, Cursor, etc.). It teaches the agent how to scaffold components with the right naming conventions, wire pipelines in Ace commands, and follow AdonisJS-specific best practices.
+
+Install it in your project with:
+
+```bash
+npx skills add batosai/adonis-etl
+```
+
+For core ETL concepts, the [@jrmc/etl](https://github.com/batosai/etl) package provides its own `etl-pipeline` skill.
+
 ## Performance Optimization
 
 For large-scale ETL operations, consider integrating with a job queue system (like BullMQ, or AdonisJS Queue package) to run ETL processes asynchronously, distribute workload across multiple workers, and improve reliability with automatic retry mechanisms.
@@ -195,7 +207,7 @@ For large-scale ETL operations, consider integrating with a job queue system (li
 
 This package requires:
 - `@jrmc/etl` - The core ETL library
-- AdonisJS 6.x
+- AdonisJS 6.x or 7.x
 - Node.js 22.17.0+
 
 ## File Structure
